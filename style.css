@@ -1,9 +1,13 @@
+@font-face {
+	font-family:VT323;
+	src: url('./vt323/VT323-Regular.ttf');
+}
 body {
 	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	background: linear-gradient(to right, rgb(1, 183, 238),rgb(180, 110, 163));
 	color: white;
 	margin: 0;
-	font-family: rubik;
+	font-family: VT323;
 }
 
 .container {
@@ -13,7 +17,7 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 54px;
+	font-size: 65px;
 }
 
 .pokedex {
@@ -25,7 +29,7 @@ h1 {
 
 .card {
 	list-style: none;
-	padding: 40px;
+	padding: 4px;
 	color: #222;
 	text-align: center;
 	border-radius: 20px;
@@ -47,62 +51,77 @@ h1 {
 
 .steel {
 	background-color: #f4f4f4;
+	border-radius:50%;
 }
 
 .fire {
 	background-color: #FDDFDF;
+	border-radius:50%;
 }
 
 .grass {
 	background-color: #DEFDE0;
+	border-radius:50%;
 }
 
 .electric {
 	background-color: #FCF7DE;
+	border-radius:50%;
 }
 
 .water, .ice {
 	background-color: #DEF3FD;
+	border-radius:50%;
 }
 
 .ground {
 	background-color: #f4e7da;
+	border-radius:50%;
 }
 
 .rock {
 	background-color: #d5d5d4;
+	border-radius:50%;
 }
 
 .fairy {
 	background-color: #fceaff;
+	border-radius:50%;
 }
 
 .poison {
 	background-color: #98d7a5;
+	border-radius:50%;
 }
 
 .bug {
 	background-color: #f8d5a3;
+	border-radius:50%;
 }
 
 .dragon {
 	background-color: #97b3e6;
+	border-radius:50%;
 }
 
 .psychic {
 	background-color: #eaeda1;
+	border-radius:50%;
 }
 
 .flying {
 	background-color: #F5F5F5;
+	border-radius:50%;
 }
 
 .fighting {
 	background-color: #E6E0D4;
+	border-radius:50%;
 }
 
 .normal {
 	background-color: #F5F5F5;
+	border-radius:50%;
 }
 
 .card:hover {
