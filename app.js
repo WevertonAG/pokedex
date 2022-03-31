@@ -1,3 +1,13 @@
+const ids = [];
+for(let j = 1; j < 899; j++ ){
+    if (j< 10){
+        ids.push(`00${j}`)
+    }else if (j<100){
+        ids.push(`0${j}`)
+    }else{
+        ids.push(j)
+    }
+}
 
 const fetchPokemon = () =>{
     const getPokemonUrl = id =>`https://pokeapi.co/api/v2/pokemon/${id}`
@@ -13,7 +23,7 @@ const fetchPokemon = () =>{
             accumulator += `
                 <li class ="card">
                 <img class="card-image ${types[0]}" alt="${name}"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${d+=1}.png"/>
+                    src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${ids[d+=1]}.png"/>
                     
                     <h2 class="card-title">${pokemon.id}. ${pokemon.name}</h2>
                     <p class="card-subtitle">${types.join(' | ')}</p>
