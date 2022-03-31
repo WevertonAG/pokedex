@@ -17,7 +17,7 @@ const fetchPokemon = () =>{
         pokemonPromises.push(fetch(getPokemonUrl(i)).then(response => response.json()))
     }
     Promise.all(pokemonPromises).then(pokemons => {
-        let d= 0
+        let d= -1
         const lisPokemons = pokemons.reduce((accumulator, pokemon)=>{
             const types = pokemon.types.map(typeInfo => typeInfo.type.name)
             accumulator += `
